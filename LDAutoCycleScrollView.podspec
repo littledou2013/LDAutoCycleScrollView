@@ -24,13 +24,13 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/littledou2013/LDAutoCycleScrollView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'littledou2013' => 'chenxiaoshuang@qingting.fm' }
+  s.author           = { 'littledou' => 'cchen_xiao_shuang@163.com' }
   s.source           = { :git => 'https://github.com/littledou2013/LDAutoCycleScrollView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LDAutoCycleScrollView/Classes/**/*'
+  s.source_files = 'LDAutoCycleScrollView/Lib/**/*'
   
   # s.resource_bundles = {
   #   'LDAutoCycleScrollView' => ['LDAutoCycleScrollView/Assets/*.png']
