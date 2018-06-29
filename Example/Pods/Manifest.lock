@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - LDAutoCycleScrollView (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - LDAutoCycleScrollView (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  LDAutoCycleScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  LDAutoCycleScrollView: 6eb61dc5a4eb77cba3ec6783096145bdfca2734a
+
+PODFILE CHECKSUM: 18d49bf7698f63fbd8fbf3b31c7ec3a71f3f59c7
+
+COCOAPODS: 1.5.0

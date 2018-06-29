@@ -1,0 +1,6 @@
+framework module Pods_LDAutoCycleScrollView_Tests {
+  umbrella header "Pods-LDAutoCycleScrollView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module LDAutoCycleScrollView {
+  umbrella header "LDAutoCycleScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

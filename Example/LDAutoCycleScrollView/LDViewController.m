@@ -7,6 +7,7 @@
 //
 
 #import "LDViewController.h"
+#import "LDCycleScrollView.h"
 
 @interface LDViewController ()
 
@@ -17,13 +18,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    LDCycleItem *item = [[LDCycleItem alloc] init];
+    item.image = [UIImage imageNamed:@"image_001"];
+    LDCycleItem *item2 = [[LDCycleItem alloc] init];
+    item2.image = [UIImage imageNamed:@"image_002"];
+    LDCycleScrollView *scrollView = [LDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 200) items:@[item, item2] direction:LDCycleScrollViewDirectionVertical];
+    [self.view addSubview:scrollView];
+    
+    LDCycleItem *item11= [[LDCycleItem alloc] init];
+    item11.image = [UIImage imageNamed:@"image_002"];
+    LDCycleItem *item21 = [[LDCycleItem alloc] init];
+    item21.image = [UIImage imageNamed:@"image_001"];
+    LDCycleScrollView *scrollView1 = [LDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 400, self.view.bounds.size.width, 200) items:@[item11, item21] direction:LDCycleScrollViewDirectionHorizontal];
+    [self.view addSubview:scrollView1];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
