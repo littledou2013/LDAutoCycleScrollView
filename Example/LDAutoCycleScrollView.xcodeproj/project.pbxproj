@@ -25,7 +25,7 @@
 		A561A8932D77763B83E06578 /* Pods_LDAutoCycleScrollView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4894F885735461130C21902D /* Pods_LDAutoCycleScrollView_Example.framework */; };
 		A84D2C0D20E64F3600289215 /* LDCycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A84D2C0820E64F3600289215 /* LDCycleCollectionViewCell.m */; };
 		A84D2C0E20E64F3600289215 /* LDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A84D2C0B20E64F3600289215 /* LDCycleScrollView.m */; };
-		A84D2C0F20E64F3600289215 /* LDCycleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A84D2C0C20E64F3600289215 /* LDCycleCollectionViewCell.xib */; };
+		A86B5E5D20EA0BF40038CE90 /* LDCycleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86B5E5C20EA0BF30038CE90 /* LDCycleCollectionViewCell.xib */; };
 		C6C00914A4E1972011A742FE /* Pods_LDAutoCycleScrollView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D275F6C5D6BDD53EE2737E9 /* Pods_LDAutoCycleScrollView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +70,7 @@
 		A84D2C0920E64F3600289215 /* LDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCycleScrollView.h; sourceTree = "<group>"; };
 		A84D2C0A20E64F3600289215 /* LDCycleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCycleCollectionViewCell.h; sourceTree = "<group>"; };
 		A84D2C0B20E64F3600289215 /* LDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCycleScrollView.m; sourceTree = "<group>"; };
-		A84D2C0C20E64F3600289215 /* LDCycleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCycleCollectionViewCell.xib; sourceTree = "<group>"; };
+		A86B5E5C20EA0BF30038CE90 /* LDCycleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDCycleCollectionViewCell.xib; sourceTree = "<group>"; };
 		AAB3E0F2729F4E1554D7D8FF /* Pods-LDAutoCycleScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDAutoCycleScrollView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LDAutoCycleScrollView_Example/Pods-LDAutoCycleScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F4142F6E2358778C04D4EE /* LDAutoCycleScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LDAutoCycleScrollView.podspec; path = ../LDAutoCycleScrollView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C2BC92F8327566181FD62872 /* Pods-LDAutoCycleScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDAutoCycleScrollView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LDAutoCycleScrollView_Tests/Pods-LDAutoCycleScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +106,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				A86B5E5B20EA0BF30038CE90 /* Assert */,
 				A84D2C0720E64F3600289215 /* Lib */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LDAutoCycleScrollView */,
@@ -212,10 +213,18 @@
 				A84D2C0920E64F3600289215 /* LDCycleScrollView.h */,
 				A84D2C0A20E64F3600289215 /* LDCycleCollectionViewCell.h */,
 				A84D2C0B20E64F3600289215 /* LDCycleScrollView.m */,
-				A84D2C0C20E64F3600289215 /* LDCycleCollectionViewCell.xib */,
 			);
 			name = Lib;
 			path = ../Lib;
+			sourceTree = "<group>";
+		};
+		A86B5E5B20EA0BF30038CE90 /* Assert */ = {
+			isa = PBXGroup;
+			children = (
+				A86B5E5C20EA0BF30038CE90 /* LDCycleCollectionViewCell.xib */,
+			);
+			name = Assert;
+			path = ../Assert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A84D2C0F20E64F3600289215 /* LDCycleCollectionViewCell.xib in Resources */,
+				A86B5E5D20EA0BF40038CE90 /* LDCycleCollectionViewCell.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
