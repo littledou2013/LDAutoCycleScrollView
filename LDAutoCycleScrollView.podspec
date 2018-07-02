@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LDAutoCycleScrollView'
-  s.version          = '0.1.0'
+  s.version          = '0.1'
   s.summary          = '自动轮播图片'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LDAutoCycleScrollView/Lib/**/*'
+  s.source_files = 'Lib/**/*'
   
   # s.resource_bundles = {
   #   'LDAutoCycleScrollView' => ['LDAutoCycleScrollView/Assets/*.png']
