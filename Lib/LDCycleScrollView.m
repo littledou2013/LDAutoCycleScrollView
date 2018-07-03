@@ -60,7 +60,7 @@ NSString * const ID = @"LDCycleCollectionViewCell";
     collectionView.pagingEnabled = YES;
     collectionView.showsHorizontalScrollIndicator = NO;
     collectionView.showsVerticalScrollIndicator = NO;
-    [collectionView registerNib:[UINib nibWithNibName:@"LDCycleCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ID];
+    [collectionView registerNib:[UINib nibWithNibName:@"LDCycleCollectionViewCell" bundle:[NSBundle bundleForClass:[LDCycleScrollView class]]] forCellWithReuseIdentifier:ID];
     collectionView.dataSource = self;
     collectionView.delegate = self;
     collectionView.scrollsToTop = NO;
